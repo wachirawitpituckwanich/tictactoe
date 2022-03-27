@@ -21,7 +21,7 @@ Developed using ReactJS with CSS3 and HTML5
 
 Upon entering the website, the website will display as follows.
 
-![Home](/readme_img/home.png?raw=true)
+![Home](/readme_img/home.PNG?raw=true)
 
 Once input the scale for the board and pressing ENTER key or Play button the board will show up.
 
@@ -37,7 +37,7 @@ Once any player get their marks in a row in any direction. the game will end and
 
 If all squares are full, the game will ends in a tie. the website will then display 'Tied' via text below the board.
 
-![Tied](/readme_img/draw.gif?raw=true)
+![Tied](/readme_img/draw.PNG?raw=true)
 
 Move history can be checked in the history section below the board. Pressing the 'Go to Move #' will revert the board back to move #.
 
@@ -47,7 +47,7 @@ Move history can be checked in the history section below the board. Pressing the
 
 <h2>Figma Design</h2>
 
-![Figma](https://www.figma.com/file/7puAByfGR6QnF0ZdzsXYie/Untitled?node-id=3%3A165)
+[Figma](https://www.figma.com/file/7puAByfGR6QnF0ZdzsXYie/Untitled?node-id=3%3A165)
 
 <h2>Algorithm</h2>
 
