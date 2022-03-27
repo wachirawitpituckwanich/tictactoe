@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+<h1 align="center"> ❌ Tic Tac Toe ⭕ </h1>
+<h3 align="center">🎮 Scalable Tic Tac Toe 🕹️</h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About 📝
 
-## Available Scripts
+- Simple Tic Tac Toe game with scalable board
+- Project duration : 4 days
 
-In the project directory, you can run:
 
-### `npm start`
+# Tools & Resources used 💻
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Website icon - [PNGREPO](https://www.pngrepo.com/svg/395329/tic-tac-toe)
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+code snippet - [Stackoverflow](https://stackoverflow.com/)
+<br/>
 
-### `npm test`
+Developed using ReactJS with CSS3 and HTML5
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Features 🌌
 
-### `npm run build`
+Upon entering the website, the website will display as follows.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Home](/readme_img/home.png?raw=true)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once input the scale for the board and pressing ENTER key or Play button the board will show up.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Type](/readme_img/start.gif?raw=true)
 
-### `npm run eject`
+Now you can start playing the game!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Start](/readme_img/play.gif?raw=true)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Once any player get their marks in a row in any direction. the game will end and the website will determine the winner via text below the board.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Winner](/readme_img/win.gif?raw=true)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If all squares are full, the game will ends in a tie. the website will then display 'Tied' via text below the board.
 
-## Learn More
+![Tied](/readme_img/draw.gif?raw=true)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Move history can be checked in the history section below the board. Pressing the 'Go to Move #' will revert the board back to move #.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![History](/readme_img/history.gif?raw=true)
 
-### Code Splitting
+# Design & Algorithm 🧮
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<h2>Figma Design</h2>
 
-### Analyzing the Bundle Size
+![Figma](https://www.figma.com/file/7puAByfGR6QnF0ZdzsXYie/Untitled?node-id=3%3A165)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<h2>Algorithm</h2>
 
-### Making a Progressive Web App
+In order to determine the winner, we must check that all symbols in any rows, columns, diagonal or counterdiagonal are identical.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+firstly, we check the row by using for-loop with the condition when i is equal to width of the board, we iterate and add all element in the rows into an array and check the array using function allElementSame which will return the first element in the array if all elements in the array are identical.
 
-### Advanced Configuration
+secondly, we will check the row by iterating through the entire board and push all elements in the rows into an array and checking it using function allElementSame.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+thirdly, we check diagonal by iterating through the entire board with the condition when i mod width + 1 equals 0, we will push the elements in to the array and checking it.
 
-### Deployment
+lastly, we will check counterdiagonal by we check diagonal by iterating through the entire board with the condition when i mod width - 1 equals 0, we will push the elements in to the array and checking it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Local installation 📁
 
-### `npm run build` fails to minify
+Use Node.js package manager [npm](https://nodejs.org/en/) to install modules needed for the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install
+```
+Run the project locally via npm or [yarn](https://yarnpkg.com/)
+```bash
+npm start
+// or
+yarn start
+```
