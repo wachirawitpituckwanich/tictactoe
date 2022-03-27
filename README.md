@@ -4,7 +4,7 @@
 # About 📝
 - [Click here to play](https://wachirawitpituckwanich.github.io/tictactoe/)
 - Simple Tic Tac Toe game with scalable board
-- Project duration : 4 days
+- Project duration : 5 days
 
 
 # Tools & Resources used 💻
