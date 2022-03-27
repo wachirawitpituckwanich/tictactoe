@@ -2,7 +2,7 @@
 <h3 align="center">🎮 Scalable Tic Tac Toe 🕹️</h3>
 
 # About 📝
-
+- [Click here to play](https://wachirawitpituckwanich.github.io/tictactoe/)
 - Simple Tic Tac Toe game with scalable board
 - Project duration : 4 days
 
@@ -12,7 +12,7 @@
 Website icon - [PNGREPO](https://www.pngrepo.com/svg/395329/tic-tac-toe)
 <br/>
 
-code snippet - [Stackoverflow](https://stackoverflow.com/)
+Code snippet - [Stackoverflow](https://stackoverflow.com/)
 <br/>
 
 Developed using ReactJS with CSS3 and HTML5
@@ -31,11 +31,11 @@ Now you can start playing the game!
 
 ![Start](/readme_img/play.gif?raw=true)
 
-Once any player get their marks in a row in any direction. the game will end and the website will determine the winner via text below the board.
+Once any player get their marks in a row in any direction, the game will end. the website will then determine and annouce the winner
 
 ![Winner](/readme_img/win.gif?raw=true)
 
-If all squares are full, the game will ends in a tie. the website will then display 'Tied' via text below the board.
+If all squares are full and there is no winner, the game will ends in a tie. the website will then display 'Tied' 
 
 ![Tied](/readme_img/draw.PNG?raw=true)
 
@@ -51,7 +51,7 @@ Move history can be checked in the history section below the board. Pressing the
 
 <h2>Algorithm</h2>
 
-In order to determine the winner, we must check that all symbols in any rows, columns, diagonal or counterdiagonal are identical.
+In order to determine the winner, we must check that all symbols in any of the rows, columns, diagonal or counterdiagonal are identical.
 
 firstly, we check the row by using for-loop with the condition when i is equal to width of the board, we iterate and add all element in the rows into an array and check the array using function allElementSame which will return the first element in the array if all elements in the array are identical.
 
@@ -61,6 +61,7 @@ thirdly, we check diagonal by iterating through the entire board with the condit
 
 lastly, we will check counterdiagonal by we check diagonal by iterating through the entire board with the condition when i mod width - 1 equals 0, we will push the elements in to the array and checking it.
 
+once we get the winner we will display the winner's symbol. otherwise the website will display the next player
 # Local installation 📁
 
 Use Node.js package manager [npm](https://nodejs.org/en/) to install modules needed for the project.
